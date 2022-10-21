@@ -1,0 +1,1 @@
+Tập hợp các sự vật cùng bản chất
