@@ -1,0 +1,1 @@
+Cùng 1 thời gian, hoạt động [[Lao động phức tạp]] sẽ tạo ra nhiều giá trị hơn so với [[Lao động giản đơn]]

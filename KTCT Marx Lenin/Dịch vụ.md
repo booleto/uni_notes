@@ -1,0 +1,1 @@
+Là một loại [[Hàng hóa]], nhưng là hàng hóa vô hình

@@ -1,0 +1,1 @@
+# Nguyên tắc ngang giá

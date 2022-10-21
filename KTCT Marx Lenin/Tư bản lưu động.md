@@ -1,0 +1,2 @@
+### Khái niệm
+Bộ phận tư bản sản xuất tồn tại dới hình thái sức lao động, nguyên nhiên vật liệu, vật liệu phụ, giá trị của nó được chuyển 1 lần, toàn phần vào giá trị sản phẩm khi kết thúc từng quá trình sản xuất
