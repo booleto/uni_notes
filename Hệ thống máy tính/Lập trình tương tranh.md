@@ -2,11 +2,13 @@
 ### Khái niệm cơ bản
 ##### Tiến trình (Process):
 Là bản thực thi của mã chương trình trong hệ điều hành. Các tiến trình có không gian nhớ cho chương trình và . Mỗi tiến trình được hệ điều hành quản lý qua 1 số liệu: pid
+
 VD: Lệnh `fork()` cho phép sao lặp tiến trình cha, tạo ra 1 tiến trình con
 ```c
 pid = fork();
 ```
 Nếu `pid == 0` -> đang ở trong tiến trình con
+
 nếu `pid > 0`  -> đang ở trong tiến trình cha
 
 Chương trình:
@@ -31,15 +33,18 @@ VD: Running, Ready, blocked
 - Blocked: đang chờ dữ liệu vào/ra
 
 ##### Luồng (threads)
-Là mô hình cho phép thực hiện song song cùng 1 đoạn mã chương trình nhưng theo các trình tự khác nhau
-Mỗi luồng có không gian nhớ cho biến cục bộ, tham số riêng nhưng chia sẻ các biến và tài nguyên tập thể
-Mã chương trình là chung cho các luồng nhưng mỗi luồng có thể chạy 1 lệnh khác nhau
+Là mô hình cho phép thực hiện song song cùng 1 đoạn mã chương trình nhưng theo các trình tự khác nhau.
+
+Mỗi luồng có không gian nhớ cho biến cục bộ, tham số riêng nhưng chia sẻ các biến và tài nguyên tập thể.
+
+Mã chương trình là chung cho các luồng nhưng mỗi luồng có thể chạy 1 lệnh khác nhau.
+
 
 ##### Tình trạng ganh đua (race condition)
 Là tình trạng có nhiều hơn 1 tiến trình cùng truy cập 1 tài nguyên chung và dẫn tới kết quả không dự đoán được.
 
 ##### Vùng cạnh tranh (critical section/region)
-Đoạn mà trong 1 chương trình mà khi thực hiện song song với đoạn mã khác, có thể gây ra tình trạng ganh đua
+Đoạn mà trong 1 chương trình mà khi thực hiện song song với đoạn mã khác, có thể gây ra tình trạng ganh đua.
 
 VD: các thao tác rút tiền tài khoản
 1. Nhập mã PIN
@@ -52,7 +57,8 @@ VD: các thao tác rút tiền tài khoản
 8. In biên lai
 
 ###### 1. Giải pháp luân phiên (Alternato)
-Cho 2 tiến trình A, B
+Cho 2 tiến trình A, B.
+
 Dữ liệu chung:
 ```c
 int turn; //0: lượt A; 1: lượt B
@@ -102,7 +108,8 @@ Khi 1 tiến trình muốn sử dụng tài nguyên cạnh tranh thì cần gọ
 ```c
 enter_region();
 ```
-Nếu tài nguyên chưa sẵn sàng thì `enter_region()` không thoát ra
+Nếu tài nguyên chưa sẵn sàng thì `enter_region()` không thoát ra.
+
 Sau khi chạy xong đoạn mã cạnh tranh, thì tiến trình cần gọi hàm `leave_region()`
 
 Mã:
@@ -115,9 +122,11 @@ enter_region(int pid) {
 }
 ```
 Giải thích điều kiện:
-`(turn == pid)`: Nếu thỏa mãn thì chứng tỏ là tiến trình hiện tại là tiến trình gán biến turn sau cùng
-TH1: Nếu chỉ tiến trình hiện tại muốn sử dụng tài nguyên `(interest[other] == TRUE)` => sử dụng tài nguyên
-TH2: Nếu `interest[other] == TRUE` => chờ (do đến sau)
+`(turn == pid)`: Nếu thỏa mãn thì chứng tỏ là tiến trình hiện tại là tiến trình gán biến turn sau cùng.
+
+TH1: Nếu chỉ tiến trình hiện tại muốn sử dụng tài nguyên `(interest[other] == TRUE)` => sử dụng tài nguyên.
+
+TH2: Nếu `interest[other] == TRUE` => chờ (do đến sau).
 
 ```c
 leave_region(int pid) {
@@ -133,6 +142,7 @@ Nhận xét:
 ###### 3. Giải pháp TSL (Test and Set Lock)
 Là 1 lệnh được hỗ trợ bởi phần cứng (CPU) có cú pháp `TSL register, flag`
 <=> 2 lệnh nếu được thực hiện 1 cách liên tục: `register := flag`, `flag := 1`
+
 VD: sử dụng biến cờ để xử lý tương tranh tài nguyên
 ```c
 L: if (flag == 0) { //rồi //ToC
@@ -144,8 +154,11 @@ L: if (flag == 0) { //rồi //ToC
 }
 ```
 **ToC**: Time of Check
+
 **ToU**: Time of Use
+
 ToC =/= ToU, các lệnh được đảm bảo thực hiện liên tục
+
 
 TSL cung cấp 2 hàm `enter_region()` và `leave_region()`
 
@@ -278,10 +291,12 @@ consumer() {
 	```
 
 ***Q:*** Nếu đoạn mã cạnh tranh không đúng, chúng ta có thể bảo vệ toàn bộ mã tiến trình bằng `down / up (&mutex)` ?
+
 ***Chú ý:*** không được phép down semaphore liên quan đến tài nguyên, trong cặp `down / up (&mutex)`, vì có thể gây ra tình trạng deadlock
 
 ##### Bài toán bữa ăn của các nhà hiền triết Trung Hoa (Dining philosophers)
 Có 5 nhà hiền triết ngồi quanh bàn tròn. Trước mặt mỗi nhà hiền triết là 1 đĩa mì, 5 đũa, đặt xen kẽ giữa các đĩa mì.
+
 Hoạt động của các nhà hiền triết:
 - Suy ngẫm
 - Thấy đói, nhặt 2 đũa liền kề
@@ -334,8 +349,9 @@ philosopher(int i) {
 	}
 }
 ```
-Hàm `take_chopsticks()` sử dụng 1 hàm phụ `test(i)` để kiểm tra là 2 đũa có sẵn sàng trên bàn hay không
-Nếu có thì dùng semaphore S[i] báo hiệu lấy được 2 đũa, và chuyển trạng thái của NHT i sang EATING (đánh dấu 2 đũa đã thuộc về NHT i)
+Hàm `take_chopsticks()` sử dụng 1 hàm phụ `test(i)` để kiểm tra là 2 đũa có sẵn sàng trên bàn hay không.
+
+Nếu có thì dùng semaphore `S[i]` báo hiệu lấy được 2 đũa, và chuyển trạng thái của NHT `i` sang `EATING` (đánh dấu 2 đũa đã thuộc về NHT `i`)
 ```c
 take_chopsticks(int i) {
 	state[i] = HUNGRY;
@@ -363,7 +379,8 @@ drop_chopsticks(int i) {
 ```
 
 ##### Bài toán đọc và ghi (Reader - writer problem)
-Có 1 số tiến trình đọc và 1 số tiến trình ghi trên cùng 1 tệp
+Có 1 số tiến trình đọc và 1 số tiến trình ghi trên cùng 1 tệp.
+
 Các thao tác thực hiện song song:
 
 		P1			P2			 Permission
@@ -466,8 +483,9 @@ client() {
 ```
 
 ##### Bài toán tạo phân tử nước
-Cho 2 dây chuyền sản xuất các nguyên tố hydro và oxygen. Dây chuyền thứ 3 thu thập 2 nguyên tử hydro + 1 nguyên tử oxygen để tạo ra 1 phân tử nước
-Yêu cầu: viết chương trình mô phỏng 3 dây chuyền này
+Cho 2 dây chuyền sản xuất các nguyên tố hydro và oxygen. Dây chuyền thứ 3 thu thập 2 nguyên tử hydro + 1 nguyên tử oxygen để tạo ra 1 phân tử nước.
+
+Yêu cầu: viết chương trình mô phỏng 3 dây chuyền này.
 
 **Biểu diễn dữ liệu chung**
 ```c
@@ -511,11 +529,11 @@ make_water() {
 ```
 
 ### Đồng bộ giữa các tiến trình sử dụng Monitor
-Nhận xét: Lập trình với semaphore, nếu không cẩn trọng, có thể dễ tạo ra deadlock vì các thao tác up/down có thể đặt bất kỳ đâu trong chương trình
+Nhận xét: Lập trình với semaphore, nếu không cẩn trọng, có thể dễ tạo ra deadlock vì các thao tác up/down có thể đặt bất kỳ đâu trong chương trình.
 
 ##### Khái niệm Monitor
-Được tạo ra từ lập trình hướng đối tượng và lập trình tương tranh
-Cụ thể 1 monitor là 1 đối tượng thuộc lớp có cấu trúc sau
+Được tạo ra từ lập trình hướng đối tượng và lập trình tương tranh.
+Cụ thể 1 monitor là 1 đối tượng thuộc lớp có cấu trúc sau.
 
 ```c
 monitor myMonitor {
@@ -531,8 +549,11 @@ monitor myMonitor {
 ```
 
 Trong 1 monitor chỉ có 1 procedure được phép chạy tại 1 thời điểm
+
 => có thể viết các procedure sao cho mỗi procedure chứa 1 đoạn mã cạnh tranh
+
 => không bao giờ có 2 đoạn mã cạnh tranh (trên shared data) cùng thực hiện
+
 => không có race condition
 
 Các biến condition variables kiểm soát việc đoạn mã cạnh tranh có thể truy cập shared data hay không. Nếu dữ liệu chưa sẵn sàng thì tiến trình sẽ ngủ chờ trên condition variable. Một tiến trình khác sẽ đánh thức khi điều kiện thỏa mãn
@@ -603,7 +624,9 @@ if(cond_var) {
 ```
 
 Nếu được logic thỏa mãn, tiến trình được phép chạy đoạn mã cạnh tranh trong thủ tục monitor
+
 Nếu không, tiến trình chuyển sang trạng thái ngủ và được gắn vào cuối hàng đợi FIFO
+
 Một tiến trình khác khi chạy xong đoạn mã chương trình sẽ đánh thức tiến trình đầu hàng đợi FIFO để thực hiện
 
 2 thao tác liên qua đến cond_var:
