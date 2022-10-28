@@ -483,7 +483,7 @@ client() {
 ```
 
 ##### Bài toán tạo phân tử nước
-Cho 2 dây chuyền sản xuất các nguyên tố hydro và oxygen. Dây chuyền thứ 3 thu thập 2 nguyên tử hydro + 1 nguyên tử oxygen để tạo ra 1 phân tử nước.
+Cho 2 dây chuyền sản xuất các nguyên tố hydro và oxy. Dây chuyền thứ 3 thu thập 2 nguyên tử hydro + 1 nguyên tử oxy để tạo ra 1 phân tử nước.
 
 Yêu cầu: viết chương trình mô phỏng 3 dây chuyền này.
 
