@@ -11,7 +11,7 @@ Nếu $c$ không phải là nghiệm $\implies (a,\,c)$ hoặc $(c,\,b)$ có ngh
 Nếu $f(c).f(a) < 0 \implies$ có nghiệm trong $(a,\,c)$ (vì định lý giá trị trung gian; làm tương tự nếu $f(c).f(b) < 0$)
 $\implies$ Tiếp tục chia đôi cho đến khi nghiệm thu được $< \epsilon$ ($\epsilon$ là sai số chấp nhận được)
 
-![[bisection.png]]
+![](bisection.png)
 
 ### Phương pháp dây cung
 ##### Điểm Fourier
@@ -25,7 +25,7 @@ $$
 x_{n+1} = x_n - \frac{f(x_n)}{f(x_n)-f(b)} \cdot (x_n - b)
 $$
 
-![[chord.jpg]]
+![](chord.jpg)
 
 ##### Định lý
 $f', f''$ không đổi dấu thì $\{x_n\}$ hội tụ đơn điệu đến nghiệm
@@ -67,7 +67,7 @@ $$
 ##### Phương pháp Newton
 **Ý tưởng:** tại $(x_n,\, f(x_n))$ kẻ đường tiếp tuyến cắt trục hoành, lấy giao điểm làm $x_{n+1}$
 
-![[newton.png]]
+![](newton.png)
 
 **Công thức:**
 $$
