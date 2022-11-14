@@ -1,0 +1,1 @@
+BTVN: So sánh địa tô chênh lệch 1 và địa tô chênh lệch 2

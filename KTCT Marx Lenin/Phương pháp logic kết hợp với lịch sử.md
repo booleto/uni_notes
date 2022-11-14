@@ -1,0 +1,1 @@
+Cho phép nghiên cứu, tiếp cận bản chất, các xu hướng và các quy luật kinh tế gắn với sự hình thành, phát triển của các quan hệ xã hội của sản xuất và trao đổi

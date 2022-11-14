@@ -1,0 +1,1 @@
+Quan hệ chính trị - xã hội là những quan hệ xã hội liên quan trực tiếp đến vấn đề quyền lực nhà nước

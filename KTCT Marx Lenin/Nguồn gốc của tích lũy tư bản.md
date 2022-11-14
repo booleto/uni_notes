@@ -1,0 +1,1 @@
+Nguồn gốc của tích lũy tư bản là [[Giá trị thặng dư]]

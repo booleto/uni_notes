@@ -1,0 +1,162 @@
+{
+  "main": {
+    "id": "bce7260f8a0e06fe",
+    "type": "split",
+    "children": [
+      {
+        "id": "40ccbf61667ed46d",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "9cd26edb40d39477",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "CNXHKH/Vấn đề dân tộc trong thời kỳ quá độ lên chủ nghĩa xã hội.md",
+                "mode": "source",
+                "backlinks": false,
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "1719af591afb6d07",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Vấn đề tôn giáo.md",
+                "mode": "source",
+                "backlinks": false,
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "e341355aca7bcec2",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Tôn giáo.md",
+                "mode": "source",
+                "backlinks": false,
+                "source": false
+              }
+            }
+          }
+        ],
+        "currentTab": 2
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "1964291232eddd2b",
+    "type": "split",
+    "children": [
+      {
+        "id": "252cd796992b83bf",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "50766b422cdfa651",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "byModifiedTime"
+              }
+            }
+          },
+          {
+            "id": "d2342a7b40d311c6",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "nền sản xuất công nghiệp",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 278.51103591918945
+  },
+  "right": {
+    "id": "a8e294c581798ba1",
+    "type": "split",
+    "children": [
+      {
+        "id": "cf6f60c678d4f05c",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "c7355ff9764407e9",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "Tôn giáo.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": true,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": false
+              }
+            }
+          },
+          {
+            "id": "b564f4c45f556c98",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "Tôn giáo.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": false
+              }
+            }
+          },
+          {
+            "id": "3303aa9f387a08b5",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          }
+        ],
+        "currentTab": 1
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "active": "e341355aca7bcec2",
+  "lastOpenFiles": [
+    "CNXHKH/Vấn đề dân tộc trong thời kỳ quá độ lên chủ nghĩa xã hội.md",
+    "Tôn giáo.md",
+    "Vấn đề tôn giáo.md",
+    "Mê tín hủ tục.md",
+    "CNXHKH/Cơ cấu xã hội.md",
+    "CNXHKH/Thời kỳ quá độ.md",
+    "CNXHKH/CNXHKH.md",
+    "CNXHKH/bài tập.md",
+    "CNXHKH/Giai cấp nông dân.md",
+    "CNXHKH/Quy luật chính trị - xã hội.md"
+  ]
+}

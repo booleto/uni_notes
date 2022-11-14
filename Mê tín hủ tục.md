@@ -1,0 +1,1 @@
+Là niềm tin đã bị vượt qua
