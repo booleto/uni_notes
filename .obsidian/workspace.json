@@ -26,7 +26,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Vấn đề tôn giáo.md",
+                "file": "CNXHKH/Vấn đề tôn giáo.md",
                 "mode": "source",
                 "backlinks": false,
                 "source": false
@@ -39,7 +39,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Tôn giáo.md",
+                "file": "CNXHKH/Vấn đề dân tộc trong thời kỳ quá độ lên chủ nghĩa xã hội.md",
                 "mode": "source",
                 "backlinks": false,
                 "source": false
@@ -105,7 +105,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Tôn giáo.md",
+                "file": "CNXHKH/Vấn đề dân tộc trong thời kỳ quá độ lên chủ nghĩa xã hội.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -122,7 +122,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Tôn giáo.md",
+                "file": "CNXHKH/Vấn đề dân tộc trong thời kỳ quá độ lên chủ nghĩa xã hội.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": false
               }
@@ -148,15 +148,15 @@
   },
   "active": "e341355aca7bcec2",
   "lastOpenFiles": [
-    "CNXHKH/Vấn đề dân tộc trong thời kỳ quá độ lên chủ nghĩa xã hội.md",
-    "Tôn giáo.md",
-    "Vấn đề tôn giáo.md",
-    "Mê tín hủ tục.md",
-    "CNXHKH/Cơ cấu xã hội.md",
-    "CNXHKH/Thời kỳ quá độ.md",
-    "CNXHKH/CNXHKH.md",
-    "CNXHKH/bài tập.md",
-    "CNXHKH/Giai cấp nông dân.md",
-    "CNXHKH/Quy luật chính trị - xã hội.md"
+    "CNXHKH/Giai cấp công nhân.md",
+    "CNXHKH/Vấn đề tôn giáo.md",
+    "CNXHKH/Mê tín hủ tục.md",
+    "CNXHKH/Tôn giáo.md",
+    "Toán rời rạc/Chỉnh hợp.md",
+    "Toán rời rạc/Hoán vị.md",
+    "Toán rời rạc/Tổ hợp.md",
+    "Phương trình vi phân/Phương trình tách biến.md",
+    "Phương trình vi phân/Phương trình vi phân cấp 1.md",
+    "Phương trình vi phân/Phương trình tách biến được.md"
   ]
 }
