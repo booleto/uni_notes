@@ -8,38 +8,20 @@
         "type": "tabs",
         "children": [
           {
-            "id": "9cd26edb40d39477",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "CNXHKH/Vấn đề dân tộc trong thời kỳ quá độ lên chủ nghĩa xã hội.md",
-                "mode": "source",
-                "backlinks": false,
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "1719af591afb6d07",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "CNXHKH/Vấn đề tôn giáo.md",
-                "mode": "source",
-                "backlinks": false,
-                "source": false
-              }
-            }
-          },
-          {
             "id": "e341355aca7bcec2",
             "type": "leaf",
             "state": {
+              "type": "graph",
+              "state": {}
+            }
+          },
+          {
+            "id": "07d591b01cb3c529",
+            "type": "leaf",
+            "state": {
               "type": "markdown",
               "state": {
-                "file": "CNXHKH/Vấn đề dân tộc trong thời kỳ quá độ lên chủ nghĩa xã hội.md",
+                "file": "CNXHKH/Ôn tập.md",
                 "mode": "source",
                 "backlinks": false,
                 "source": false
@@ -47,7 +29,7 @@
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -105,7 +87,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "CNXHKH/Vấn đề dân tộc trong thời kỳ quá độ lên chủ nghĩa xã hội.md",
+                "file": "CNXHKH/Ôn tập.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -122,7 +104,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "CNXHKH/Vấn đề dân tộc trong thời kỳ quá độ lên chủ nghĩa xã hội.md",
+                "file": "CNXHKH/Ôn tập.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": false
               }
@@ -144,19 +126,20 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
-  "active": "e341355aca7bcec2",
+  "active": "07d591b01cb3c529",
   "lastOpenFiles": [
-    "CNXHKH/Giai cấp công nhân.md",
-    "CNXHKH/Vấn đề tôn giáo.md",
-    "CNXHKH/Mê tín hủ tục.md",
     "CNXHKH/Tôn giáo.md",
-    "Toán rời rạc/Chỉnh hợp.md",
-    "Toán rời rạc/Hoán vị.md",
-    "Toán rời rạc/Tổ hợp.md",
-    "Phương trình vi phân/Phương trình tách biến.md",
-    "Phương trình vi phân/Phương trình vi phân cấp 1.md",
-    "Phương trình vi phân/Phương trình tách biến được.md"
+    "CNXHKH/Ôn tập.md",
+    "CNXHKH/Vấn đề tôn giáo.md",
+    "Chương trình Phương trình đạo hàm riêng.md",
+    "Chương trình Nhập môn IoT.md",
+    "Chương trình Các thành phần phần mềm.md",
+    "CNXHKH/Giai cấp công nhân.md",
+    "CNXHKH/Mê tín hủ tục.md",
+    "CNXHKH/Cơ cấu xã hội.md",
+    "CNXHKH/Dân tộc.md"
   ]
 }
