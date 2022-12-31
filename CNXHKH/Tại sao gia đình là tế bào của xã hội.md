@@ -1,0 +1,3 @@
+- Gia đình là đơn vị nhỏ nhất để tạo nên xã hội. Không có gia đình để tái tạo con người thì xã hội không tồn tại được
+- Gia đình giữ vai trò trung tâm trong đời sống con người, đảm bảo đời sống vật chất tinh thần cho mỗi cá nhân
+	- Gia đình không chỉ là đơn vị tình cảm - tâm lý, mà còn là tổ chức kinh tế - tiêu dùng, một môi trường giáo dục - văn hóa, một cơ cấu - thiết chế xã hội đặc biệt
