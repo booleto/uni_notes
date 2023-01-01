@@ -3,13 +3,16 @@
 ##### Tiến trình (Process):
 Là bản thực thi của mã chương trình trong hệ điều hành. Các tiến trình có không gian nhớ cho chương trình và . Mỗi tiến trình được hệ điều hành quản lý qua 1 số liệu: pid
 VD: Lệnh `fork()` cho phép sao lặp tiến trình cha, tạo ra 1 tiến trình con
+
 ```c
 pid = fork();
 ```
+
 Nếu `pid == 0` -> đang ở trong tiến trình con
 nếu `pid > 0`  -> đang ở trong tiến trình cha
 
 Chương trình:
+
 ```c
 int a = 5;
 main() {
@@ -52,12 +55,15 @@ VD: các thao tác rút tiền tài khoản
 8. In biên lai
 
 ###### 1. Giải pháp luân phiên (Alternato)
-Cho 2 tiến trình A, B
+Cho 2 tiến trình A, B.
 Dữ liệu chung:
+
 ```c
 int turn; //0: lượt A; 1: lượt B
 ```
+
 Mã tiến trình A và B:
+
 ```c
 // A
 A() {
@@ -80,6 +86,7 @@ B() {
 	}
 }
 ```
+
 Nhận xét:
 - Giới hạn cho 2 tiến trình
 - Nếu 1 tiến trình không muốn chạy đoạn mã thì chương trình không thể giao lượt cho tiến trình còn lại
@@ -89,23 +96,30 @@ Nhận xét:
 ###### 2. Giải pháp Peterson
 Tiến trình muốn sử dụng tài nguyên cạnh tranh thì phải bày tỏ nguyện vọng, trường hợp có 2 tiến trình bày tỏ nguyện vọng thì tiến trình tới trước sẽ được sử dụng tài nguyên.
 Khai báo dữ liệu chung:
+
 ```c
 int turn; //0: lượt A; 1: lượt B
 int interest[2]; //true (1) là có quan tâm, false (0) là không quan tâm
 ```
+
 Giải pháp Peterson cung cấp 2 hàm:
+
 ```c
 enter_region(int pid); //pid == 0 thì là pid A, pid == 1 thì là pid B
 leave_region(int pid);
 ```
+
 Khi 1 tiến trình muốn sử dụng tài nguyên cạnh tranh thì cần gọi
+
 ```c
 enter_region();
 ```
+
 Nếu tài nguyên chưa sẵn sàng thì `enter_region()` không thoát ra
 Sau khi chạy xong đoạn mã cạnh tranh, thì tiến trình cần gọi hàm `leave_region()`
 
 Mã:
+
 ```c
 enter_region(int pid) {
 	int other = 1 - pid; //pid của tiến trình còn lại
@@ -114,6 +128,7 @@ enter_region(int pid) {
 	while ((turn == pid) && (interest[other] == TRUE));
 }
 ```
+
 Giải thích điều kiện:
 `(turn == pid)`: Nếu thỏa mãn thì chứng tỏ là tiến trình hiện tại là tiến trình gán biến turn sau cùng
 TH1: Nếu chỉ tiến trình hiện tại muốn sử dụng tài nguyên `(interest[other] == TRUE)` => sử dụng tài nguyên
@@ -124,6 +139,7 @@ leave_region(int pid) {
 	interest[pid] = FALSE;
 }
 ```
+
 Nhận xét:
 - Vẫn giới hạn cho 2 tiến trình
 - Nếu 1 tiến trình bày tỏ không quan tâm, thì tiến trình còn lại có thể khai thác tài nguyên cạnh tranh mà không cần chờ tới việc giao lượt
@@ -181,17 +197,20 @@ Semaphore là 1 kiểu dữ liệu nguyên không âm mà ta chỉ có thể tha
 **2 cách sử dụng semaphore**
 - *Binary semaphore*: 0/1 => tối đa chỉ có 1 tiến trình, down thành công được 1 binary semaphore
   => Có thể sử dụng semaphore nhị phân để bảo vệ đoạn mã cạnh tranh
+  
 ```c
 down(&mutex);
 critical_section();
 up(&mutex);
 ```
+
 `mutex` (Mutual Exclusion) là 1 semaphore nhị phân
 
 - *Non-binary semaphore:* >0, biểu diễn số lượng tài nguyên sẵn sàng của hệ thống
 VD: `semaphore prititers = z;` dùng để đồng bộ việc cấp phát/giải phóng tài nguyên giữa các tiến trình
 
 ##### Bài toán Producer - Consumer
+
 **Producer:**
 - Sản xuất 1 mặt hàng
 - Tới kho, kiểm tra có ngăn rỗng không? Nếu không => ngủ chờ
@@ -206,6 +225,7 @@ VD: `semaphore prititers = z;` dùng để đồng bộ việc cấp phát/giả
 - Lặp lại
 
 **Khai báo chung:**
+
 ```c
 #define N 10; //10 ngăn
 
@@ -213,6 +233,7 @@ int count; //đếm số ngăn có hàng/đầy
 ```
 
 **Mã chương trình:**
+
 ```c
 producer() {
 	while (1) {
@@ -236,12 +257,16 @@ consumer() {
 ```
 
 **Giải pháp sử dụng semaphore**
+
 Khai báo chung:
+
 ```c
 #define N 10;
 semaphore mutex = 1; full = 0; empty = N; //full là số ngăn đầy, empty là số ngăn rỗng
 ```
+
 code:
+
 ```c
 producer() {
 	int i;
@@ -271,6 +296,7 @@ consumer() {
 ###### Tóm tắt cách viết mã xử lý tương tranh:
 - Dựa trên yêu cầu bài toán, xác định các semaphore dùng để đồng bọ hoạt động cấp phát/giải phóng tài nguyên (vd: `full`, `empty`)
 - Xác định đoạn mã cạnh tranh trong chương trình và bảo vệ nó bởi cặp:
+
   ``` c
   down(&mutex);
   ...
@@ -278,6 +304,7 @@ consumer() {
 	```
 
 ***Q:*** Nếu đoạn mã cạnh tranh không đúng, chúng ta có thể bảo vệ toàn bộ mã tiến trình bằng `down / up (&mutex)` ?
+
 ***Chú ý:*** không được phép down semaphore liên quan đến tài nguyên, trong cặp `down / up (&mutex)`, vì có thể gây ra tình trạng deadlock
 
 ##### Bài toán bữa ăn của các nhà hiền triết Trung Hoa (Dining philosophers)
@@ -289,13 +316,17 @@ Hoạt động của các nhà hiền triết:
 - Đặt đũa xuống
 
 **Một giải pháp:**
+
 Khai báo chung:
+
 ```c
 #define N 5;
 #define LEFT_CH(i) i;
 #define RIGHT_CH(i) (i + 1)%N;
 ```
+
 Code:
+
 ```c
 philosopher(int i) { //i = 0..4
 	while(1) {
@@ -308,10 +339,13 @@ philosopher(int i) { //i = 0..4
 	}
 }
 ```
+
 sự cố: deadlock xảy ra khi mỗi nhà hiền triết lấy được đũa trái và chờ lấy đũa phải
 
 **Sử dụng semaphore:**
+
 Khai báo chung:
+
 ```c
 #define N 5;
 #define THINKING 0;
@@ -323,7 +357,9 @@ semaphore mutex = 1;
 semaphore S[N]; //S[i] = 1 nếu 2 đũa sẵn sàng, = 0 nếu 2 đũa không sẵn sàng => ngủ chờ
 int state[N]; //state[i] = THINKING/HUNGRY/EATING
 ```
+
 Code:
+
 ```c
 philosopher(int i) {
 	while(1) {
@@ -334,8 +370,10 @@ philosopher(int i) {
 	}
 }
 ```
+
 Hàm `take_chopsticks()` sử dụng 1 hàm phụ `test(i)` để kiểm tra là 2 đũa có sẵn sàng trên bàn hay không
 Nếu có thì dùng semaphore S[i] báo hiệu lấy được 2 đũa, và chuyển trạng thái của NHT i sang EATING (đánh dấu 2 đũa đã thuộc về NHT i)
+
 ```c
 take_chopsticks(int i) {
 	state[i] = HUNGRY;
@@ -377,11 +415,14 @@ Các thao tác thực hiện song song:
 => Tiến trình đọc đầu tiên là giành quyền ghi, tiến trình đọc cuối cùng phải trả quyền ghi
 
 **Khai báo chung:**
+
 ```c
 semaphore mutex = 1, db = 1; //db gác quyền ghi, mutex bảo vệ đoạn mã cạnh tranh
 int rc; //reader counter
 ```
+
 **Code:**
+
 ```c
 writer() {
 	prepare_data();
@@ -432,6 +473,7 @@ Cửa hàng có N ghế chờ
 	=> Số khách hàng và số thợ sẵn sàng bởi 2 semaphore clients, barbers
 
 **Khai báo chung**
+
 ```c
 #define N 5
 semaphore mutex = 1;
@@ -441,6 +483,7 @@ int waitings; //có bao nhiêu ghế bận
 ```
 
 **Code:**
+
 ```c
 barber() {
 	while(1) {
@@ -470,6 +513,7 @@ Cho 2 dây chuyền sản xuất các nguyên tố hydro và oxygen. Dây chuy�
 Yêu cầu: viết chương trình mô phỏng 3 dây chuyền này
 
 **Biểu diễn dữ liệu chung**
+
 ```c
 semaphore h_sem, o_sem;
 int w_mol;
@@ -538,6 +582,7 @@ Trong 1 monitor chỉ có 1 procedure được phép chạy tại 1 thời đi�
 Các biến condition variables kiểm soát việc đoạn mã cạnh tranh có thể truy cập shared data hay không. Nếu dữ liệu chưa sẵn sàng thì tiến trình sẽ ngủ chờ trên condition variable. Một tiến trình khác sẽ đánh thức khi điều kiện thỏa mãn
 
 ###### VD: Bài toán gửi/rút tiền
+
 ```c
 monitor GuiRutTien {
 	int balance;
@@ -558,6 +603,7 @@ monitor GuiRutTien {
 ```
 
 Cài đặt trong java
+
 ```java
 class GuiRutTien {
 	int balance;
@@ -592,6 +638,7 @@ public synchronized RutTien() {
 (tương tự cho GuiTien)
 
 ###### Condition variables
+
 Một condition variable là 1 biến điều kiện logic được gắn với 1 hàng đợi FIFO
 
 ```java
@@ -607,12 +654,14 @@ Nếu không, tiến trình chuyển sang trạng thái ngủ và được gắn
 Một tiến trình khác khi chạy xong đoạn mã chương trình sẽ đánh thức tiến trình đầu hàng đợi FIFO để thực hiện
 
 2 thao tác liên qua đến cond_var:
+
 ```java
 wait(cond_var); //ngủ chờ trên biến điều kiện
 signal(cond_var); // đánh thức tiến trình đầu hàng đợi FIFO gắn với cond_var
 ```
 
 ###### Bài toán nhà sản xuất - người tiêu dùng
+
 ```c
 monitor NSX_NTD {
 	int fullSlots; // đếm số ngăn có hàng
@@ -647,6 +696,7 @@ C++ không hỗ trợ trực tiếp monitor mà cần phải cài đặt qua vi�
 Các hàm thư viện pthread hỗ trợ khóa mutex và cond_var:
 
 **Khóa mutex**
+
 ```c
 pthread_mutex_t mutex = PTHREAD_MUTEX_INITIALIZER;
 pthread_mutex_lock(); // khóa
@@ -654,6 +704,7 @@ pthread_mutex_unlock(); // mở
 ```
 
 **Condition variables**
+
 ```c
 pthread_cond_t condVar = PTHREAD_COND_INITIALIZER;
 pthread_cond_wait(); // ngủ chờ
@@ -661,6 +712,7 @@ pthread_cond_signal(); // đánh thức
 ```
 
 **Khai báo chung**
+
 ```c
 pthread_cond_t full, empty;
 pthread_mutex_t mutex;

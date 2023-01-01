@@ -16,19 +16,6 @@
             }
           },
           {
-            "id": "07d591b01cb3c529",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "CNXHKH/Vấn đề dân tộc trong thời kỳ quá độ lên chủ nghĩa xã hội.md",
-                "mode": "source",
-                "backlinks": false,
-                "source": false
-              }
-            }
-          },
-          {
             "id": "2bd2542b768a143a",
             "type": "leaf",
             "state": {
@@ -47,7 +34,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Hệ thống máy tính/Luyện đề/Đề 2 - MAT3501 2019-2020 MT&KHTT.md",
+                "file": "Hệ thống máy tính/Luyện đề/Đề 1 - MAT3501 2019-2020 MT&KHTT.md",
                 "mode": "source",
                 "backlinks": false,
                 "source": false
@@ -55,7 +42,7 @@
             }
           },
           {
-            "id": "175e6989e8d6e0e6",
+            "id": "17ac7e532fd2c65e",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -66,19 +53,9 @@
                 "source": false
               }
             }
-          },
-          {
-            "id": "0bf989042617e5c5",
-            "type": "leaf",
-            "state": {
-              "type": "release-notes",
-              "state": {
-                "currentVersion": "1.1.9"
-              }
-            }
           }
         ],
-        "currentTab": 4
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -136,7 +113,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Hệ thống máy tính/Luyện đề/Đề 2 - MAT3501 2019-2020 MT&KHTT.md",
+                "file": "Hệ thống máy tính/Luyện đề/Đề 1 - MAT3501 2019-2020 MT&KHTT.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -153,7 +130,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Hệ thống máy tính/Luyện đề/Đề 2 - MAT3501 2019-2020 MT&KHTT.md",
+                "file": "Hệ thống máy tính/Luyện đề/Đề 1 - MAT3501 2019-2020 MT&KHTT.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": false
               }
@@ -187,17 +164,17 @@
       "markdown-importer:Open format converter": false
     }
   },
-  "active": "175e6989e8d6e0e6",
+  "active": "54d734da5bcd3c5b",
   "lastOpenFiles": [
-    "Hệ thống máy tính/Luyện đề/Đề 1 - MAT3501 2019-2020 MT&KHTT.md",
     "Hệ thống máy tính/Luyện đề/Đề 2 - MAT3501 2019-2020 MT&KHTT.md",
+    "Hệ thống máy tính/Luyện đề/Đề 1 - MAT3501 2019-2020 MT&KHTT.md",
+    "Hệ thống máy tính/Luyện đề/de2.jpg",
     "Hệ thống máy tính/Lập trình tương tranh.md",
+    "Giải tích số/Giải gần đúng phương trình phi tuyến.md",
+    "CNXHKH/Vấn đề dân tộc trong thời kỳ quá độ lên chủ nghĩa xã hội.md",
+    "de2.jpeg.md",
     "Hệ thống máy tính/Quản lý bộ nhớ.md",
     "CNXHKH/Ôn tập.md",
-    "CNXHKH/Tại sao gia đình là tế bào của xã hội.md",
-    "CNXHKH/Vấn đề dân tộc trong thời kỳ quá độ lên chủ nghĩa xã hội.md",
-    "CNXHKH/Dân tộc.md",
-    "CNXHKH/Mê tín hủ tục.md",
-    "CNXHKH/Tôn giáo.md"
+    "CNXHKH/Tại sao gia đình là tế bào của xã hội.md"
   ]
 }
