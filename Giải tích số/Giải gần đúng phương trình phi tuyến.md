@@ -16,7 +16,7 @@ Nếu $c$ không phải là nghiệm $\implies (a,\,c)$ hoặc $(c,\,b)$ có ngh
 
 Nếu $f(c).f(a) < 0 \implies$ có nghiệm trong $(a,\,c)$ (vì định lý giá trị trung gian; làm tương tự nếu $f(c).f(b) < 0$)
 
-$\implies$ Tiếp tục chia đôi cho đến khi nghiệm thu được $< \epsilon$ ($\epsilon$ là sai số chấp nhận được)
+$\implies$ Tiếp tục chia đôi cho đến khi nghiệm thu được $< \epsilon$ ( $\epsilon$ là sai số chấp nhận được)
 
 ![](bisection.png)
 
@@ -87,6 +87,7 @@ Khi đó: dãy lặp $x_{n+1} = \varphi(x_n)$ hội tụ đến điểm bất đ
 $$
 |x_n - x^{*}| \leq \frac{L^n}{1-L} \cdot |x_1 - x_0|
 $$
+
 Ước lượng hậu nghiệm (chính xác hơn so với tiên nghiệm)
 
 $$
