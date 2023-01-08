@@ -1,4 +1,17 @@
 **Câu 1: Anh/chị hãy trình bày nội dung, đặc điểm sứ mệnh lịch sử của giai cấp công nhân. Qua đó phân tích, làm rõ điều kiện khách quan và nhân tố chủ quan quy định sứ mệnh lịch sử của giai cấp công nhân.**
+- Nội dung:
+	- Nhiệm vụ:
+		- Kinh tế: Cả tạo quan hệ sản xuất tư nhân tư bản chủ nghĩa, xây dựng quan hệ sản xuất mới - xã hội chủ nghĩa
+		- Chính trị: Tiến hành cách mạng xã hội chủ nghĩa, thực hiện chuyên chính vô sản, giành chính quyền về tay giai cấp vô sản
+		- Văn hóa, tư tưởng: Xóa bỏ hệ tư tưởng thống trị của giai cấp tư sản, chống chủ nghĩa đế quốc, chủ nghĩa thực dân, chủ nghĩa tư bản. Xây dựng nền văn hóa mới, nền văn hóa của giai cấp vô sản
+	- Đặc điểm:
+		- Sinh ra từ các tiền đề kinh tế - xã hội mang tính xã hội ngày càng cao
+		- Thực hiện sứ mệnh lịch sử của giai cấp công nhân là nhiệm vụ chung của nhân dân lao động
+		- Xóa bỏ hình thức sở hữu tư nhân tư liệu sản xuất, là nguồn gốc gây ra áp bức bóc lột trong xã hội hiện đại
+		- Giành chính quyền về tay giai cấp công nhân là bước đầu cải tạo toàn diện, sâu sắc, triệt để xã hội cũ
+- Điều kiện khách quan
+	- Lực lượng sản xuất ngày càng được xã hội hóa
+	- Giai cấp công nhân ngày càng gia tăng về số lượng và chất lượng
 
 **Câu 2: Anh/chị hãy phân tích đặc điểm và nội dung sứ mệnh lịch sử của giai cấp công nhân Việt Nam**
 

@@ -34,7 +34,20 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Hệ thống máy tính/Luyện đề/Đề 1 - MAT3501 2019-2020 MT&KHTT.md",
+                "file": "CNXHKH/Giai cấp công nhân.md",
+                "mode": "source",
+                "backlinks": false,
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "0f2329b9976347ac",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Giải tích số/Giải gần đúng phương trình phi tuyến.md",
                 "mode": "source",
                 "backlinks": false,
                 "source": false
@@ -42,7 +55,7 @@
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -100,7 +113,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Hệ thống máy tính/Luyện đề/Đề 1 - MAT3501 2019-2020 MT&KHTT.md",
+                "file": "Giải tích số/Giải gần đúng phương trình phi tuyến.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -117,7 +130,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Hệ thống máy tính/Luyện đề/Đề 1 - MAT3501 2019-2020 MT&KHTT.md",
+                "file": "Giải tích số/Giải gần đúng phương trình phi tuyến.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": false
               }
@@ -151,17 +164,17 @@
       "markdown-importer:Open format converter": false
     }
   },
-  "active": "17ac7e532fd2c65e",
+  "active": "0f2329b9976347ac",
   "lastOpenFiles": [
-    "Hệ thống máy tính/Lập trình tương tranh.md",
-    "Hệ thống máy tính/Luyện đề/Đề 1 - MAT3501 2019-2020 MT&KHTT.md",
-    "Hệ thống máy tính/Luyện đề/Đề 2 - MAT3501 2019-2020 MT&KHTT.md",
-    "Hệ thống máy tính/Luyện đề/de2.jpg",
-    "Giải tích số/Giải gần đúng phương trình phi tuyến.md",
-    "CNXHKH/Vấn đề dân tộc trong thời kỳ quá độ lên chủ nghĩa xã hội.md",
-    "de2.jpeg.md",
-    "Hệ thống máy tính/Quản lý bộ nhớ.md",
+    "CNXHKH/Giai cấp công nhân.md",
+    "CNXHKH/Giai cấp nông dân.md",
     "CNXHKH/Ôn tập.md",
-    "CNXHKH/Tại sao gia đình là tế bào của xã hội.md"
+    "Hệ thống máy tính/Lập trình tương tranh.md",
+    "CNXHKH/CNXHKH.md",
+    "CNXHKH/Vấn đề dân tộc trong thời kỳ quá độ lên chủ nghĩa xã hội.md",
+    "CNXHKH/Tôn giáo.md",
+    "CNXHKH/Mê tín hủ tục.md",
+    "CNXHKH/Tại sao gia đình là tế bào của xã hội.md",
+    "Hệ thống máy tính/Quản lý bộ nhớ.md"
   ]
 }
