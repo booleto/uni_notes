@@ -11,8 +11,26 @@
             "id": "e341355aca7bcec2",
             "type": "leaf",
             "state": {
-              "type": "graph",
-              "state": {}
+              "type": "markdown",
+              "state": {
+                "file": "Cơ sở dữ liệu/Các khái niệm cơ bản.md",
+                "mode": "source",
+                "backlinks": false,
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "96e222a6c81411fe",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Thiết kế và đánh giá thuật toán/Ký hiệu O lớn.md",
+                "mode": "source",
+                "backlinks": false,
+                "source": false
+              }
             }
           },
           {
@@ -47,7 +65,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Thực hành tính toán/Nội dung Thực hành tính toán.md",
+                "file": "Nhập môn AI/Tài liệu.md",
                 "mode": "source",
                 "backlinks": false,
                 "source": false
@@ -55,7 +73,7 @@
             }
           }
         ],
-        "currentTab": 3
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -113,7 +131,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Thực hành tính toán/Nội dung Thực hành tính toán.md",
+                "file": "Cơ sở dữ liệu/Các khái niệm cơ bản.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -130,7 +148,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Thực hành tính toán/Nội dung Thực hành tính toán.md",
+                "file": "Cơ sở dữ liệu/Các khái niệm cơ bản.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": false
               }
@@ -166,15 +184,15 @@
   },
   "active": "50766b422cdfa651",
   "lastOpenFiles": [
+    "Cơ sở dữ liệu/Các khái niệm cơ bản.md",
     "Cơ sở dữ liệu/Cơ sở dữ liệu quan hệ.md",
+    "Thực hành tính toán/Nội dung Thực hành tính toán.md",
+    "Nhập môn AI/Tài liệu.md",
     "Giải tích số/Giải gần đúng phương trình phi tuyến.md",
     "CNXHKH/Giai cấp công nhân.md",
     "CNXHKH/Giai cấp nông dân.md",
     "CNXHKH/Ôn tập.md",
     "Hệ thống máy tính/Lập trình tương tranh.md",
-    "CNXHKH/CNXHKH.md",
-    "CNXHKH/Vấn đề dân tộc trong thời kỳ quá độ lên chủ nghĩa xã hội.md",
-    "CNXHKH/Tôn giáo.md",
-    "CNXHKH/Mê tín hủ tục.md"
+    "CNXHKH/CNXHKH.md"
   ]
 }
