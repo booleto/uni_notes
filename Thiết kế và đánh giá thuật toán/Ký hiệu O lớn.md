@@ -1,6 +1,4 @@
-$$
-f(n) = O(cg(n))
-$$
+$$f(n) = O(cg(n))$$
 sao cho: $\exists c, \forall n > n_0 : f(n) < cg(n)$
 
 ### Các quy tắc:
