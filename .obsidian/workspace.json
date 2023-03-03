@@ -8,72 +8,19 @@
         "type": "tabs",
         "children": [
           {
-            "id": "e341355aca7bcec2",
+            "id": "f4220074794e9c22",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Cơ sở dữ liệu/Các khái niệm cơ bản.md",
-                "mode": "source",
-                "backlinks": false,
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "96e222a6c81411fe",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Thiết kế và đánh giá thuật toán/Ký hiệu O lớn.md",
-                "mode": "source",
-                "backlinks": false,
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "35ebf3daf456b603",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Cơ sở dữ liệu/Cơ sở dữ liệu quan hệ.md",
-                "mode": "source",
-                "backlinks": false,
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "e854e0c3439332e0",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Cơ sở dữ liệu/Các khái niệm cơ bản.md",
-                "mode": "source",
-                "backlinks": false,
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "b50e8cf084711473",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Nhập môn AI/Tài liệu.md",
+                "file": "Thiết kế và đánh giá thuật toán/Thực hành 3.md",
                 "mode": "source",
                 "backlinks": false,
                 "source": false
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -131,7 +78,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Cơ sở dữ liệu/Các khái niệm cơ bản.md",
+                "file": "Thiết kế và đánh giá thuật toán/Thực hành 3.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -148,7 +95,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Cơ sở dữ liệu/Các khái niệm cơ bản.md",
+                "file": "Thiết kế và đánh giá thuật toán/Thực hành 3.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": false
               }
@@ -182,17 +129,23 @@
       "markdown-importer:Open format converter": false
     }
   },
-  "active": "50766b422cdfa651",
+  "active": "f4220074794e9c22",
   "lastOpenFiles": [
+    "Thiết kế và đánh giá thuật toán/Ký hiệu O lớn.md",
+    "Thiết kế và đánh giá thuật toán/Thực hành 3.md",
+    "Cơ sở dữ liệu/Bài tập buổi 3.md",
+    "Chương trình Phương trình đạo hàm riêng.md",
+    "Cơ sở dữ liệu/Cài đặt.md",
+    "Cơ sở dữ liệu/Chủ đề bài tập nhóm.md",
+    "Nhập môn AI/Tài liệu.md",
     "Cơ sở dữ liệu/Các khái niệm cơ bản.md",
+    "Untitled",
+    "Nhập môn AI/Bài tập AI.md",
     "Cơ sở dữ liệu/Cơ sở dữ liệu quan hệ.md",
     "Thực hành tính toán/Nội dung Thực hành tính toán.md",
-    "Nhập môn AI/Tài liệu.md",
     "Giải tích số/Giải gần đúng phương trình phi tuyến.md",
     "CNXHKH/Giai cấp công nhân.md",
     "CNXHKH/Giai cấp nông dân.md",
-    "CNXHKH/Ôn tập.md",
-    "Hệ thống máy tính/Lập trình tương tranh.md",
-    "CNXHKH/CNXHKH.md"
+    "CNXHKH/Ôn tập.md"
   ]
 }
