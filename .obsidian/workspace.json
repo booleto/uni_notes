@@ -4,26 +4,6 @@
     "type": "split",
     "children": [
       {
-        "id": "40ccbf61667ed46d",
-        "type": "tabs",
-        "children": [
-          {
-            "id": "0de2e8189ad91b50",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Thực hành tính toán/Các phương pháp Runge-Kutta.md",
-                "mode": "source",
-                "backlinks": false,
-                "source": true
-              }
-            },
-            "group": "a2bb72d1665d823c"
-          }
-        ]
-      },
-      {
         "id": "206f5bf09bb464f4",
         "type": "tabs",
         "children": [
@@ -33,15 +13,36 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Thực hành tính toán/Các phương pháp Runge-Kutta.md",
+                "file": "Thiết kế và đánh giá thuật toán/Ký hiệu O lớn.md",
                 "mode": "preview",
                 "backlinks": false,
                 "source": true
               }
-            },
-            "group": "a2bb72d1665d823c"
+            }
+          },
+          {
+            "id": "f775798cc0d61969",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Cơ sở dữ liệu/Bài thu hoạch.md",
+                "mode": "source",
+                "backlinks": false,
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "18f5d0e1431cf182",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {}
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -83,8 +84,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 278.51103591918945,
-    "collapsed": true
+    "width": 278.51103591918945
   },
   "right": {
     "id": "a8e294c581798ba1",
@@ -100,7 +100,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Thực hành tính toán/Các phương pháp Runge-Kutta.md",
+                "file": "Cơ sở dữ liệu/Bài thu hoạch.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -117,7 +117,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Thực hành tính toán/Các phương pháp Runge-Kutta.md",
+                "file": "Cơ sở dữ liệu/Bài thu hoạch.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": false
               }
@@ -151,14 +151,15 @@
       "markdown-importer:Open format converter": false
     }
   },
-  "active": "d5ba13a076bb63f8",
+  "active": "f775798cc0d61969",
   "lastOpenFiles": [
-    "Thiết kế và đánh giá thuật toán/Thực hành 3.md",
-    "Thực hành tính toán/Các phương pháp Runge-Kutta.md",
     "Thiết kế và đánh giá thuật toán/Ký hiệu O lớn.md",
+    "Cơ sở dữ liệu/Bài thu hoạch.md",
+    "Thiết kế và đánh giá thuật toán/Thực hành 3.md",
     "Thiết kế và đánh giá thuật toán/Thực hành 4.md",
     "Thiết kế và đánh giá thuật toán/Thực hành 5.md",
     "Cơ sở dữ liệu/Chủ đề bài tập nhóm.md",
+    "Thực hành tính toán/Các phương pháp Runge-Kutta.md",
     "Nhập môn AI/Uninformed search.md",
     "Nhập môn AI/Tài liệu.md",
     "Chương trình Phương trình đạo hàm riêng.md",
